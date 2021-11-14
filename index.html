@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script defer src="javascript.js"></script>
+</head>
+<body>
+    <div id="header">
+        <h1 id="heading">TIP CALCULATOR</h1>
+    </div>
+
+    <div id="content">
+        <form action="" id="form">
+            <label for="bill" class="bill_info text"> How much was your bill ? <br>
+                <input type="text" name="bill" id="bill"  class="input" required>&#x20b9 <br><br>
+            </label>
+
+            <label for="service" class="bill_info text ">How was your service ? <br>
+                <select name="service" id="service" class="bill_info dropdown ">
+                    <option value="0">None - Poor</option>
+                    <option value="10">10% - Good</option>
+                    <option value="20">20% - Better</option>
+                    <option value="30">30% - Outstanding</option>
+                </select>
+                <br><br>
+
+            </label>
+
+            <label for="people" class="bill_info text">How many people are sharing the bill ? <br>
+                <input type="text" name="" id="people" class="input" required > People
+            </label>
+
+            <br><br>
+
+           <button id="submit" onclick="tipAmount()" type="button">Calculate</button>
+            <br><br>
+        </form>
+        <div id="result">
+            <input type="text" name="" id="ans" disabled>
+           <h1 id="ans_text">Tip contribution for each</h1>
+        </div>
+
+        
+    </div>
+    
+</body>
+</html>
